@@ -13,23 +13,23 @@ dependencies = [
     "debugpy>=1.8.13",
     "deepspeed>=0.18.3",
     "hf-transfer>=0.1.8",
-    "litellm>=1.72.0,<1.75.2", # avoid needing backoff https://github.com/BerriAI/litellm/issues/13827
+    "litellm>=1.84.0,<1.84.1", # avoid needing backoff https://github.com/BerriAI/litellm/issues/13827
     "matplotlib>=3.9.3",
     "multiprocess<0.70.18", # avoid AttributeError in ResourceTracker.__del__
-    "nltk>=3.9.1",
+    "nltk>=3.9.4",
     "numpy>=2",
     "ai2-olmo-core",
     "nvitop>=1.4.2",
     "packaging>=24.2",
     "peft>=0.13.2",
-    "pyarrow>=20.0.0",
+    "pyarrow>=24.0.0",
     "pyyaml>=6.0.2",
     "ray[default]>=2.49.2",
     "setuptools>=75.6.0,<80.0.0",
     "tensorboard>=2.18.0",
     "torch>=2.10.0",
     "transformers>=5.4.0",
-    "vllm>=0.19.1; platform_system != 'Darwin'",
+    "vllm>=0.23.0; platform_system != 'Darwin'",
     "wandb==0.23.1",
     "langdetect==1.0.9",
     "immutabledict==1.2.0",
@@ -97,7 +97,7 @@ explicit = true
 [project.optional-dependencies]
 code = [
     "pydantic>=2.0.0",
-    "requests>=2.28.0",
+    "requests>=2.34.2",
 ]
 dr-tulu = [
     "dr_agent",
@@ -122,7 +122,7 @@ environments = [
 dev = [
     "beaker-py>=2.5.7",
     "mkdocs-material>=9.6.8",
-    "pytest>=8.3.4",
+    "pytest>=9.1.1",
     "ruff>=0.11.13",
     "ty>=0.0.1a13",
     "parameterized>=0.9.0",
